@@ -1,8 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:progress_dialog/progress_dialog.dart';
 
 import '../size_config.dart';
+
+ProgressDialog? pr;
 
 const kPrimaryColor = Color(0xFF1DB9C3);
 const kSecondaryColor = Color(0xFF398AB9);
@@ -244,4 +247,17 @@ class HexColor extends Color {
 class AlwaysDisabledFocusNode extends FocusNode {
   @override
   bool get hasFocus => false;
+}
+
+class utilsApps {
+  static void showDialog(BuildContext context) {
+    //verifikasinya
+    pr = new ProgressDialog(context);
+    pr!.show();
+  }
+
+  static void hideDialog(BuildContext context) {
+    pr = new ProgressDialog(context);
+    pr!.hide();
+  }
 }

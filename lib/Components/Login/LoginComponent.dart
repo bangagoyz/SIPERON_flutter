@@ -23,16 +23,13 @@ class _LoginComponent extends State<LoginComponent> {
             child: Column(
               children: [
                 SizedBox(
-                  height: SizeConfig.screenHeight * 0.04,
-                ),
-                SizedBox(
-                  height: SizeConfig.screenHeight * 0.04,
+                  height: SizeConfig.screenHeight * 0.02,
                 ),
                 SimpleShadow(
                   child: Image.asset(
                     "assets/images/icon.png",
-                    height: 150,
-                    width: 202,
+                    height: 250,
+                    width: 300,
                   ),
                   opacity: 0.5,
                   color: kSecondaryColor,

@@ -17,3 +17,9 @@
 
 
 untuk routing dari loginscreens.dart > routes > main
+
+
+cara ngerunnya flutter run --no-sound-null-safety
+
+11. buat folder api, trus bikin settingan api, samakan dengan file api di nodejs
+12. txtcontroller hubungkan sama api
